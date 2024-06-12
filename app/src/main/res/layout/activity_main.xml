@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src="@drawable/blue"
+        android:scaleType="centerCrop"
+        android:id="@+id/blue"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:src="@drawable/galaxy"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+       />
+   <ImageView
+       android:layout_width="110dp"
+       android:layout_height="150dp"
+     android:src="@drawable/attandance"
+       android:layout_below="@id/blue"
+       android:layout_marginTop="-30dp"
+       android:id="@+id/attan"/>
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+       android:src="@drawable/images"
+        android:layout_below="@id/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-30dp"
+        android:id="@+id/tick"  />
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:src="@drawable/homework"
+        android:layout_marginLeft="290dp"
+        android:layout_below="@id/blue"
+        android:layout_marginTop="-30dp"
+       android:id="@+id/a"/>
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Gallary"
+        android:background="#F6BCD0"
+        android:textColor="#E11A5E"
+        android:textStyle="bold"
+
+        android:layout_below="@id/attan"
+       android:id="@+id/gall" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-91dp"
+        android:layout_toRightOf="@id/gall"
+android:layout_below="@id/tick"
+        android:src="@drawable/gallary" />
+
+    <TextView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Pay Fee"
+        android:background="#A4D5EC"
+       android:textColor="#10339C"
+        android:layout_below="@id/gall"
+        android:layout_marginTop="40dp"/>
+   <TextView
+       android:layout_width="2000dp"
+       android:layout_height="50dp"
+       android:text="Notice"
+       android:background="#92BA94"
+       android:textColor="#028507"
+       android:layout_marginLeft="290dp"
+       android:layout_below="@id/a"
+       android:textStyle="bold"
+       android:id="@+id/not"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="About"
+        android:background="#DC957F"
+        android:textColor="#BD380E"
+        android:textStyle="bold"
+        android:layout_below="@id/not"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="40dp"/>
+
+</RelativeLayout>
